@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Batch-39 Student</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="main1.css">
+        <style>
+               form{
+                   border:solid 4px white;
+                   border-radius:6px;
+                   background-color:white;
+                   padding-left:40px;
+                   width:500px;
+                   padding-right:40px;
+                  text-align:center;                 }
+               
+               #Email,#Name,#Roll,#Branch,#Year,#pass,#pass1,#submit,#Year1,#Year2,#Year3{
+                   background-color:#DCDCDC;
+                   border-radius:4px;
+                   width:50%;
+                   line-height:50px;
+                   text-align:center;
+                 }
+               .container-login100 {
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #9053c7;
+  background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+               h3{
+                  text-align:center;
+                }
+               #email{
+                     text-align:center;
+                }
+                input {
+                     border:solid 2px black;
+                     display:grid;
+                     
+                     margin:0 auto;
+                }
+               #Email:hover,#Name:hover,#Roll:hover,#Branch:hover,#Year:hover,#pass:hover,#pass1:hover,#submit:hover,#Year1:hover,#Year2:hover,#Year3:hover{
+                background-color:lightblue;
+                }
+               #Branch{ 
+                border:solid 2px Black;
+                height:50px;
+                text-align:center;
+                }
+        </style>
+        
+</head>
+<body>
+	<div class="limiter">
+		<div class="container-login100">
+			<form method="POST" action="resvalid.php">
+                            <h3>Student Registration Form</h3>
+                            <br> 
+                            <br>
+                            <br>
+                            <label for="Email" id="email">Email </label>
+                            <input type="Email" id="Email" name="Email" placeholder="Email@vardhaman.org" align="right" required="True" autocomplete="off"/>
+                            <br>
+                            <br>
+                            <label for="Roll" id="roll">Roll Number </label>
+                            <input type="text" id="Roll" name="Roll" placeholder="XX88xA0XXX" required="True" autocomplete="off" />
+                            <br>
+                            <br>
+                            <label for="Branch" id="branch">Branch <br></label>
+                            <select id="Branch" name="Branch" >
+                            <option value="CSE" id="Branch">CSE</option>
+                            <option value="ECE" id="Branch">ECE</option>
+                            <option value="EEE" id="Branch">EEE</option>
+                            <option value="MECH" id="Branch">MECH</option>
+                            <option value="IT" id="Branch">IT</option>
+                            <option value="CIVIL" id="Branch">CIVIL</option>
+                            </select>
+                            <br>
+                            <br>
+                            <br>
+                            <label for="Year" id="year">Passout Year</label>
+                            <input type="text" id="Year" name="Year" placeholder="Graduation Year" required="True" autocomplete="off"/>
+                            <br>
+                            <br>
+                            <label for="Create" id="create">Create Password </label>
+                            <input type="Text" id="pass1" name="pass" placeholder="Password" required="True" autocomplete="off"/>
+                            <br>
+                            <br>
+                            <label for="Codechef" id="CodeChef">CodeChef </label>
+                            <input type="Text" id="Year2" name="Codechef" placeholder="User Name" required="True" autocomplete="off"/>
+                            <br>
+                            <br>
+                            <label for="CodeForces" id="CodeForces">CodeForces </label>
+                            <input type="Text" id="Year3" name="CodeForces" placeholder="User Name" required="True" autocomplete="off"/>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <input type="Submit" id="submit" onclick= "myFunction()" value="Sign in"/>
+                            <br>
+                            <br>
+                        </form>
+                </div>
+        </div>
+                       
+</div>
+</body>
+</html>

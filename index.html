@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Batch-39 Student</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="main.css">
+        <style>
+               #admin{display:none;}
+        #Student1:hover,#Admin:hover{
+                  color:green;
+                  
+                 }
+         #Student1,#Admin{
+                  font-family:cursive;
+                 }
+        </style>
+        
+        
+</head>
+<body>
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-pic js-tilt" data-tilt>
+					<img src="img-01.png" alt="IMG">
+				</div>
+                                <div id="student">
+				<form class="login100-form validate-form" method="POST" action="validateuser.php">
+					<span class="login100-form-title" id="student1" onclick="myFunction()">
+						<span id="Student1">Student</span><i> or </i><span id="Admin">Admin</span>
+					</span>
+                                        
+                                         <script>
+                                             function myFunction(){
+                                                 if(document.getElementById("student").style.display==="none"){
+                                                 document.getElementById("student").style.display="block";
+                                                 document.getElementById("admin").style.display="none";
+                                                 } 
+                                                 else{
+                                                        document.getElementById("student").style.display="none";
+                                                        document.getElementById("admin").style.display="block";
+                                                    }
+                                                }
+
+                                          </script>
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input100" type="Email" id="text3" name="username" placeholder="Student@vardhaman.org">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<input class="input100" type="password" name="password" id="text4" placeholder="Password">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+					
+					<div class="container-login100-form-btn">
+						<input type="submit">
+					</div><br>
+                                         <br>
+					<div class="text-center p-t-136">
+						<a class="txt2" id="suu" href="Admin.html">
+							Sign Up
+							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+						</a>
+					</div>
+<br><br><br>
+				</form>
+			</div>
+                        <div id="admin">
+                                        <form class="login100-form validate-form" action="scores.html">
+					<span class="login100-form-title" id="student1" onclick="myFunction()">
+						<span id="Student1">Student</span><i> or </i><span id="Admin">Admin</span>
+					</span>
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input100" type="text" id="text1" placeholder="Admin@UserName">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<input class="input100" type="password" id="text2" placeholder="Password">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+					
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn"  onclick="validate()">
+							Login
+						</button>
+					</div><br><br>
+                                       <div class="text-center p-t-136">
+						
+					</div>
+                                         
+					
+</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	
+	function validate()
+	{
+	    if(   document.getElementById("text1").value == "faculty"
+	       && document.getElementById("text2").value == "12345" )
+	    {
+	        
+	        location.href="scores.html";
+	    }
+	    else
+	    {
+	        alert( "PLEASE ENTER VALID DETAILS" );
+	        
+	    }
+	}
+
+
+</script>
+<br>
+<br>
+<br>
+</body>
+</html>
